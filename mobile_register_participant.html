@@ -4,32 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FYC - Inscription Participant</title>
-  <link rel="stylesheet" href="mobile_style.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <!-- En-tête commun avec menu déroulant -->
   <header class="site-header">
     <div class="logo-container">
-      <img src="logo.png" alt="FYC | Find your conference" class="logo">
+      <img src="image.png" alt="FYC | Find your conference" class="logo">
     </div>
     <div class="menu-toggle" id="menu-toggle">☰</div>
     <nav class="top-nav" id="top-nav">
       <a href="index.html">Accueil</a>
-      <a href="conferences.html">Conférences</a>
-      <a href="organisateur.html">Organisateur</a>
-      <a href="login.html">Connexion</a>
+      <a href="mobile_conferences.html">Conférences</a>
+      <a href="mobile_organisateur.html">Organisateur</a>
+      <a href="mobile_login.html">Connexion</a>
       <a href="mobile_register_participant.html">Inscription Participant</a>
       <a href="mobile_register_organisateur.html">Inscription Organisateur</a>
-      <a href="about.html">À propos</a>
-      <a href="contact.html">Contact</a>
+      <a href="mobile_about.html">À propos</a>
+      <a href="mobile_contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
     <h2>Inscription Participant</h2>
-    <br>
     <form class="auth-form">
       <p class="form-title">Créer un compte Participant</p>
+      
       <label for="nom">Nom</label>
       <input type="text" id="nom" required />
       
@@ -44,16 +44,21 @@
       
       <label for="confirm-password">Confirmer le mot de passe</label>
       <input type="password" id="confirm-password" required />
-      <br>
-      <br>
+      
+      <!-- Champs supplémentaires pour mieux cibler -->
+      <label for="localisation">Localisation (Ville, Région)</label>
+      <input type="text" id="localisation" placeholder="ex : Paris, Île-de-France" required />
+      
+      <label for="centres-interets">Centres d'intérêts</label>
+      <input type="text" id="centres-interets" placeholder="ex : technologie, marketing, innovation" required />
+      
       <button class="btn" type="submit">S'inscrire</button>
     </form>
   </main>
 
   <footer>
-    <p>© 2025 Find Your Conference - Tous droits réservés.</p>
+    <p>© 2025 For Your Conference - Tous droits réservés.</p>
   </footer>
-  <!-- Inclusion du JavaScript pour le menu déroulant -->
-  <script src="mobile_scripts.js"></script>
+  <script src="scripts.js"></script>
 </body>
 </html>

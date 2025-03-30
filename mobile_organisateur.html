@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FYC - Organisateur</title>
+  <link rel="stylesheet" href="mobile_style.css"/>
+</head>
+<body>
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="https://via.placeholder.com/150x50?text=FYC+Logo" alt="FYC Logo" class="logo" />
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="top-nav" id="top-nav">
+      <a href="index.html">Accueil</a>
+      <a href="mobile_conferences.html">Conférences</a>
+      <a href="mobile_organisateur.html">Organisateur</a>
+      <a href="mobile_login.html">Connexion</a>
+      <a href="mobile_register.html">Inscription</a>
+      <a href="mobile_about.html">À propos</a>
+      <a href="mobile_contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Espace Organisateur</h2>
+    <br>
+    <br>
+    <form class="conf-form">
+      <p class="form-title">Publier une conférence</p>
+      <label for="titre">Titre</label>
+      <input type="text" id="titre" required />
+      <label for="date">Date</label>
+      <input type="date" id="date" required />
+      <label for="lieu">Lieu</label>
+      <input type="text" id="lieu" required />
+      <label for="theme">Thème</label>
+      <input type="text" id="theme" />
+      <label for="description">Description</label>
+      <textarea id="description" rows="3"></textarea>
+      <label for="type">Type</label>
+      <select id="type">
+        <option value="Gratuite">Gratuite</option>
+        <option value="Payante">Payante</option>
+      </select>
+      <br>
+      <br>
+      <button class="btn" type="submit" onclick="addConference(event)">Publier</button>
+    </form>
+
+    <section>
+      <h3>Mes conférences publiées</h3>
+      <div id="myConfList"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 For Your Conference - Tous droits réservés.</p>
+  </footer>
+  <script src="scripts.js"></script>
+</body>
+</html>

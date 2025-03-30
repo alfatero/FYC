@@ -226,7 +226,7 @@ footer {
 }
 
 .radio-group {
-  /* Retire display: flex pour que chaque label s'affiche sur une ligne distincte */
+  text-align: left; /* Aligne tout le contenu à gauche */
   margin-bottom: 15px;
 }
 
@@ -234,12 +234,14 @@ footer {
   display: block;
   margin-bottom: 10px;
   line-height: 1.5;
+  text-align: left; /* S'assure que le contenu de chaque label est aligné à gauche */
 }
 
 .radio-label input[type="radio"] {
   vertical-align: middle;
   margin-right: 5px;
 }
+
 
 
 

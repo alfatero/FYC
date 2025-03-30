@@ -226,18 +226,21 @@ footer {
 }
 
 .radio-group {
-  display: flex;
-  gap: 20px;
+  /* Retire display: flex pour que chaque label s'affiche sur une ligne distincte */
   margin-bottom: 15px;
 }
 
 .radio-label {
-  display: flex;
-  align-items: center;
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1.5;
 }
 
 .radio-label input[type="radio"] {
+  vertical-align: middle;
   margin-right: 5px;
 }
+
+
 
 

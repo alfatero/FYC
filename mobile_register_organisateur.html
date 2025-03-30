@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FYC - Inscription Organisateur</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <!-- En-tête commun avec menu déroulant -->
+  <header class="site-header">
+    <div class="logo-container">
+      <img src="image.png" alt="FYC | Find your conference" class="logo">
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav class="top-nav" id="top-nav">
+      <a href="index.html">Accueil</a>
+      <a href="conferences.html">Conférences</a>
+      <a href="organisateur.html">Organisateur</a>
+      <a href="login.html">Connexion</a>
+      <a href="register_participant.html">Inscription Participant</a>
+      <a href="register_organisateur.html">Inscription Organisateur</a>
+      <a href="about.html">À propos</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Inscription Organisateur</h2>
+    <form class="auth-form">
+      <p class="form-title">Créer un compte Organisateur</p>
+      
+      <label for="nom-orga">Nom de l'organisation</label>
+      <input type="text" id="nom-orga" required />
+      
+      <label for="email">Email</label>
+      <input type="email" id="email" required />
+      
+      <label for="password">Mot de passe</label>
+      <input type="password" id="password" required />
+      
+      <label for="confirm-password">Confirmer le mot de passe</label>
+      <input type="password" id="confirm-password" required />
+      
+      <!-- Choix du type d'inscription -->
+      <p>Choisissez votre type d'inscription :</p>
+      <label>
+        <input type="radio" name="type-inscription" value="notoriete" required> Notoriété
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="type-inscription" value="lead" required> Lead
+      </label>
+      
+      <button class="btn" type="submit">S'inscrire</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Find Your Conference - Tous droits réservés.</p>
+  </footer>
+  <!-- Inclusion du JavaScript pour le menu déroulant -->
+  <script src="scripts.js"></script>
+</body>
+</html>
